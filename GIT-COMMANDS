@@ -1,0 +1,10 @@
+# To clone the code from Git-Hub
+git clone
+# To check the list of all branch's in Git-repo
+git branch -a 
+# To generate all branches in .CSV(Comma seperate value) format
+git branch -a >>git_branch_list_US_CR_FE.csv
+# To check the list off all files in git after completing .CSV
+less git_branch_list_US_CR_FE.csv
+# To generate list od branches With date wise
+for branch in `git branch -r | grep -v HEAD`;do echo -e `git show --format="%ci %cr" $branch | head -n 1` \\t$branch; done | sort -r >git_branch_list_US_CR_FE.csv
