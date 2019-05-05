@@ -1,9 +1,8 @@
 pipeline {
-    agent { 'master' }
+    node ('master')
     stages {
         stage('git_clone_demo') {
             steps {
-                echo 'Hello world!' 
                 sh'''
                 git clone https://github.com/redprasa/google.git
                 '''
