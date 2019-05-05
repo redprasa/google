@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'Hello world!' 
                 sh'''
-                git clone https://github.com/redprasa/DEMO2.git
+                git clone https://github.com/redprasa/google.git
                 '''
             }
         }
