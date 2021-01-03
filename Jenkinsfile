@@ -1,5 +1,5 @@
 pipeline {
-    node ('master')
+    node ('any')
     stages {
         stage('git_clone_demo') {
             steps {
